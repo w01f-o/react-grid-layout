@@ -15,7 +15,7 @@
 ```
 
 ## Usage
-```tsx
+```js
 import {Row, Container, Col} from '@w01f/react-grid-layout'
 
 const App = () => {
@@ -40,13 +40,13 @@ export default App;
 
 ## Available props
 For all components className, as well as all attributes related to HTMLDivElement
-```tsx
+```js
 <Container className="example__container">
     <Row className="example__row"></Row>
 </Container>
 ```
 For Col component - xxl, xl, lg, md, sm, xs
-```tsx
+```js
 <Container>
     <Row>
         <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}></Col>
