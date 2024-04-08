@@ -49,10 +49,14 @@ For Col component - xxl, xl, lg, md, sm, xs
 ```js
 <Container>
     <Row>
-        <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}></Col>
-        <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}></Col>
-        <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}></Col>
-        <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}></Col>
+        <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}>
+        </Col>
+        <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}>
+        </Col>
+        <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}>
+        </Col>
+        <Col xxl={12} xl={6} lg={3} md={6} sm={12} xs={12}>
+        </Col>
     </Row>
 </Container>
 ```
