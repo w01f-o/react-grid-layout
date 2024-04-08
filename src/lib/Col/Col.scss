@@ -1,0 +1,66 @@
+@use "sass:math";
+@import '../scss/index';
+
+@for $i from 1 through 12 {
+  $width: math.div($i, 12) * 100;
+
+  .col-#{$i} {
+    flex: 0 0 $width * 1%;
+    width: $width * 1%;
+  }
+}
+
+@include sm-screen {
+  @for $i from 1 through 12 {
+    $width: math.div($i, 12) * 100;
+
+    .col-sm-#{$i} {
+      flex: 0 0 $width * 1%;
+      width: $width * 1%;
+    }
+  }
+}
+
+@include md-screen {
+  @for $i from 1 through 12 {
+    $width: math.div($i, 12) * 100;
+
+    .col-md-#{$i} {
+      flex: 0 0 $width * 1%;
+      width: $width * 1%;
+    }
+  }
+}
+
+@include lg-screen {
+  @for $i from 1 through 12 {
+    $width: math.div($i, 12) * 100;
+
+    .col-lg-#{$i} {
+      flex: 0 0 $width * 1%;
+      width: $width * 1%;
+    }
+  }
+}
+
+@include xl-screen {
+  @for $i from 1 through 12 {
+    $width: math.div($i, 12) * 100;
+
+    .col-xl-#{$i} {
+      flex: 0 0 $width * 1%;
+      width: $width * 1%;
+    }
+  }
+}
+
+@include xxl-screen {
+  @for $i from 1 through 12 {
+    $width: math.div($i, 12) * 100;
+
+    .col-xxl-#{$i} {
+      flex: 0 0 $width * 1%;
+      width: $width * 1%;
+    }
+  }
+}

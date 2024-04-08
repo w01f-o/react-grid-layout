@@ -1,0 +1,26 @@
+@import '../scss/index';
+
+.container,
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $col-offset * 0.5;
+}
+
+.container {
+  @include sm-screen {
+    max-width: 540px;
+  }
+  @include md-screen {
+    max-width: 720px;
+  }
+  @include lg-screen {
+    max-width: 960px;
+  }
+  @include xl-screen {
+    max-width: 1140px;
+  }
+  @include xxl-screen {
+    max-width: 1320px;
+  }
+}

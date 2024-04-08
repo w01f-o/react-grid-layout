@@ -1,0 +1,55 @@
+{
+  "name": "@w01f/react-grid-layout",
+  "version": "1.0.0",
+  "description": "A grid system for react similar to bootstrap-grid",
+  "keywords": [
+    "react-grid"
+  ],
+  "author": "w01f",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w01f-o/react-grid-layout"
+  },
+  "bugs": {
+    "url": "https://github.com/w01f-o/react-grid-layout/issues"
+  },
+  "main": "./dist/react-grid-layout.umd.js",
+  "module": "./dist/react-grid-layout.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/react-grid-layout.js",
+      "require": "./dist/react-grid-layout.umd.cjs"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.74.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.8.1"
+  }
+}
