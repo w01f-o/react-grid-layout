@@ -3,27 +3,41 @@
   "version": "1.0.0",
   "description": "A grid system for react similar to bootstrap-grid",
   "keywords": [
-    "react-grid"
+    "react-grid",
+    "grid",
+    "react-layout",
+    "layout"
   ],
   "author": "w01f",
   "license": "MIT",
   "files": [
     "dist"
   ],
+  "homepage": "https://github.com/w01f-o/react-grid-layout",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/w01f-o/react-grid-layout"
+    "url": "https://github.com/w01f-o/react-grid-layout.git"
   },
   "bugs": {
     "url": "https://github.com/w01f-o/react-grid-layout/issues"
   },
-  "main": "./dist/react-grid-layout.umd.js",
-  "module": "./dist/react-grid-layout.es.js",
+  "main": "./dist/react-grid-layout.umd.cjs",
+  "module": "./dist/react-grid-layout.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/react-grid-layout.js",
-      "require": "./dist/react-grid-layout.umd.cjs"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/react-grid-layout.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/react-grid-layout.umd.cjs"
+      }
+    },
+    "./css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "type": "module",
@@ -51,5 +65,8 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.8.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
