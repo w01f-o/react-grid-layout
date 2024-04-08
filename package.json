@@ -1,5 +1,5 @@
 {
-  "name": "@w01f/react-grid-layout",
+  "name": "@w01f-o/react-grid-layout",
   "version": "1.0.0",
   "description": "A grid system for react similar to bootstrap-grid",
   "keywords": [
