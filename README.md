@@ -37,6 +37,10 @@ const App = () => {
 
 export default App;
 ```
+**In the root component.**
+```js
+import '@w01f-o/react-grid-layout/css'
+```
 
 ## Available props
 For all components className, as well as all attributes related to HTMLDivElement
@@ -59,6 +63,10 @@ For Col component - xxl, xl, lg, md, sm, xs
         </Col>
     </Row>
 </Container>
+```
+### To reset the offset of Col, Row or Container
+```js
+<Row className="offset-0"></Row>
 ```
 ## Breakpoints
 | xxl        | xl          | lg        | md          | sm        | xs        |
