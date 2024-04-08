@@ -12,13 +12,11 @@ export default defineConfig({
       fileName: "react-grid-layout",
     },
     rollupOptions: {
-      external: ["react", "react-dom", "clsx", "sass"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-          clsx: "clsx",
-          sass: "sass",
         },
       },
     },
