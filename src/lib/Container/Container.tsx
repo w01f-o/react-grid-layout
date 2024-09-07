@@ -14,9 +14,10 @@ const Container: FC<ContainerProps> = ({
 }) => {
   return (
     <div
-      className={clsx(styles.container, {
+      className={clsx({
         [`${className}`]: className,
         [styles.containerFluid]: fluid,
+        [styles.container]: !fluid,
       })}
       {...props}
     >
