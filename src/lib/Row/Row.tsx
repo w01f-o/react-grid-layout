@@ -1,15 +1,13 @@
 import type { FC, HTMLAttributes } from "react";
 import clsx from "clsx";
-import "./Row.scss";
+import styles from "./row.module.scss";
 
-const Row: FC<HTMLAttributes<HTMLDivElement>> = ({
-  children,
-  className,
-  ...props
-}) => {
+interface RowProps extends HTMLAttributes<HTMLDivElement> {}
+
+const Row: FC<RowProps> = ({ children, className, ...props }) => {
   return (
     <div
-      className={clsx("row", {
+      className={clsx(styles.row, {
         [`${className}`]: className,
       })}
       {...props}

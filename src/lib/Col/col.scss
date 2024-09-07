@@ -1,5 +1,5 @@
 @use "sass:math";
-@import '../scss/index';
+@import '../scss/index.module';
 
 @for $i from 1 through 12 {
   $width: math.div($i, 12) * 100;

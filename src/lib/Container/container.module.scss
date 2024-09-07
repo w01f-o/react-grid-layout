@@ -1,7 +1,7 @@
-@import '../scss/index';
+@import '../scss/index.module';
 
 .container,
-.container-fluid {
+.containerFluid {
   width: 100%;
   margin: 0 auto;
   padding: 0 $col-offset * 0.5;

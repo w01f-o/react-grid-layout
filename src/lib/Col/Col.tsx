@@ -1,6 +1,6 @@
 import type { FC, HTMLAttributes } from "react";
 import clsx from "clsx";
-import "./Col.scss";
+import "./col.scss";
 
 interface ColProps extends HTMLAttributes<HTMLDivElement> {
   xxl?: number;
