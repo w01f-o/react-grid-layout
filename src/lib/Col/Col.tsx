@@ -9,6 +9,7 @@ interface ColProps extends HTMLAttributes<HTMLDivElement> {
   md?: number;
   sm?: number;
   xs?: number;
+  resetOffset?: boolean;
 }
 
 const Col: FC<ColProps> = ({
@@ -20,6 +21,7 @@ const Col: FC<ColProps> = ({
   xs,
   children,
   className,
+  resetOffset,
   ...props
 }) => {
   return (
@@ -31,6 +33,7 @@ const Col: FC<ColProps> = ({
         [`col-md-${md}`]: md,
         [`col-sm-${sm}`]: sm,
         [`col-${xs}`]: xs,
+        "offset-0": resetOffset,
         [`${className}`]: className,
       })}
       {...props}
