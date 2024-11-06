@@ -41,10 +41,10 @@ import '@w01f-o/react-grid-layout/css'
 ```
 
 ## Available props
-For all components className, as well as all attributes related to HTMLDivElement
+For all components className, resetOffset, as well as all attributes related to HTMLDivElement
 ```js
-<Container className="example__container">
-    <Row className="example__row"></Row>
+<Container className="example__container" resetOffset>
+    <Row className="example__row" resetOffset></Row>
 </Container>
 ```
 For Col component - xxl, xl, lg, md, sm, xs
@@ -61,10 +61,6 @@ For Col component - xxl, xl, lg, md, sm, xs
         </Col>
     </Row>
 </Container>
-```
-### To reset the offset of Col, Row or Container
-```js
-<Row className="offset-0"></Row>
 ```
 ## Breakpoints
 | xxl        | xl          | lg        | md          | sm        | xs        |
